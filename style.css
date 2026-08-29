@@ -77,9 +77,9 @@ nav a {
 /*FOTO PRINCIPAL*/
 .foto-zendaya{
     width: 500px;
-    border-radius: 12px;
+    border-radius: 15px;
     display: block;
-    margin: 30px auto;
+    margin: 25px auto;
 }
 
 /* CONTENIDO */
@@ -110,8 +110,4 @@ img {
 
 footer {
 
-}
-
-.titulo{
-    color: darkmagenta;
 }
