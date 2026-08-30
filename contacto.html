@@ -17,7 +17,7 @@
 
         <p>Zendaya: Actriz y figura de la industria del entretenimiento</p>
 
-         <nav>
+        <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre-zendaya.html">Sobre ella</a></li>
@@ -30,71 +30,49 @@
 
     </header>
 
-    <h2> Formulario de contacto</h2>
-    
+    <main>
 
-    <form>
+        <h2>Formulario de contacto</h2>
 
-        <p>
-            <label for="Nombre">Nombre completo</label><br>
-            <input 
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Escribe tu nombre">
-        </p>
+        <section class="contacto">
 
-        <p>
-            <label for="correo">Correo electronico </label><br>
-            <input 
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="ingrese su correo lectronico (@)">
-        </p>
+            <form>
 
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
 
-        <p> 
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Escribe tu correo">
 
-             <label>En que pelicula/serie conoces a Zendaya</label><br><br>
+                <label>¿En qué película o serie conociste a Zendaya?</label>
 
-            <input type="radio" name="cine" id="spiderman" value="spiderman">
-            <label for="spiderman">Spider-Man: No Way Home</label><br>
+                <input type="radio" name="pelicula" id="spiderman">
+                <label for="spiderman">Spider-Man</label>
 
-            <input type="radio" name="cine" id="euphoria" value="Euphoria">
-            <label for=" euphoria">Euphoria</label><br>
+                <input type="radio" name="pelicula" id="euphoria">
+                <label for="euphoria">Euphoria</label>
 
-            <input type="radio" name="cine" id="La odisea" value="La odisea">
-            <label for="la odisea">La odisea </label><br>
+                <input type="radio" name="pelicula" id="dune">
+                <label for="dune">Dune</label>
 
-            <input type="radio" name="cine" id="Dune" value="Dune">
-            <label for="dune">Dune</label><br>
+                <label for="comentario">Déjanos un comentario</label>
+                <textarea id="comentario" rows="5" placeholder="Escribe aquí..."></textarea>
 
-            <input type="radio" name="cine" id="otra">
-            <label for="otra..">otra</label>
-        </p>
+                <input type="submit" value="Enviar">
 
-        <p>
-            <label for=" comentario">Dejanos un comentario</label>
-            <textarea 
-            name="comentario" 
-            id="comentario"
-            rows="7"
-            placeholder="Escribe aqui..."></textarea>
+            </form>
 
-        </p>
+        </section>
 
-        <p><input type="submit" value="Enviar."></p>
-
-    </form>
-
+    </main>
     <footer>
         <h2>Redes sociales</h2>
 
         <p>Instagram: @zendaya</p>
         <p>X (Twitter): @Zendaya</p>
         <p>© 2026 Página web educativa sobre Zendaya.</p>
-        
+
     </footer>
 
-<body>
+
+    <body>

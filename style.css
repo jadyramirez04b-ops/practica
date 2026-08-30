@@ -50,14 +50,14 @@ padding: 10px 15px;
 
 /* BIOGRAFIA*/
 
-.biografia{
+.contenedor{
 background-color: #fffaf7;
 width: 90%;
 margin: 30px auto;
 padding: 30px;
 border: 2px solid #d8b8ae;
 border-radius: 15px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
 }
 
 /* PARA EL PORTAFOLIO */
@@ -81,6 +81,38 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);;
 /* PARA CONTACTO*/
 
 
+.contacto {
+    background-color: #fffaf7;
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid #d8b8ae;
+    border-radius: 15px;
+}
+
+.contacto label {
+    display: block;
+    margin-top: 15px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.contacto input[type="submit"] {
+    margin-top: 15px;
+    padding: 8px 25px;
+    background-color: #d695a3;
+    border: 2px solid #6b5149;
+    border-radius: 8px;
+}
+
+
 
 
 /* CONTENIDO */
@@ -92,13 +124,6 @@ margin: 40px auto;
 
 
 }
-
-section {
-
-
-
-}
-
 
 /* IMÁGENES */
 
