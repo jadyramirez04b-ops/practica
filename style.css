@@ -1,153 +1,296 @@
+/* VARIABLES DE COLORES */
+
+:root {
+    --fondo: #f5eee6;
+    --rosa: #ead8d0;
+    --rosa-fuerte: #d695a3;
+    --texto: #42332d;
+    --texto-menu: #5a4038;
+    --blanco: #fffaf7;
+    --borde: #d8b8ae;
+}
+
+
+/* ESTILOS GENERALES */
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 
 body {
- font-family: 'Playfair Display',serif;
- margin: 0;
- padding: 20px;
- background-color:  #f5eee6;
- color:  #42332d;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--fondo);
+    color: var(--texto);
 }
 
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
 
 
 /* ENCABEZADO */
 
 header {
-background-color:  #ead8d0;
-padding: 30px;
-text-align: center;
-
+    background-color: var(--rosa);
+    padding: 30px;
+    text-align: center;
 }
 
-/* MENÚ */
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* MENÚ DE NAVEGACIÓN*/
 
 nav {
-margin-top: 25px;
+    margin-top: 25px;
 }
 
 nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-
 nav li {
-display: inline-block;
-
+    display: inline-block;
 }
 
 nav a {
-color: #5a4038;
-text-decoration: none;
-padding: 10px 15px;
-
+    color: var(--texto-menu);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-/* BIOGRAFIA*/
-
-.contenedor{
-background-color: #fffaf7;
-width: 90%;
-margin: 30px auto;
-padding: 30px;
-border: 2px solid #d8b8ae;
-border-radius: 15px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+nav a:hover {
+    background-color: var(--rosa-fuerte);
+    color: white;
 }
 
-/* PARA EL PORTAFOLIO */
+
+/* TÍTULOS */
+
+h1 {
+    color: var(--texto);
+}
+
+h2,
+h3 {
+    color: var(--texto);
+}
+
+
+/* SECCIONES GENERALES */
+
+section {
+    background-color: var(--blanco);
+    padding: 30px;
+    margin: 30px auto;
+    border: 2px solid var(--borde);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+}
+
+
+/* CAJA GENERAL*/
+
+.caja {
+    background-color: var(--blanco);
+    border: 2px solid var(--borde);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* BIOGRAFÍA */
+
+.biografia {
+    background-color: var(--blanco);
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid var(--borde);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+}
+
+
+/* IMÁGENES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.foto-zendaya {
+    width: 500px;
+    border-radius: 15px;
+    display: block;
+    margin: 25px auto;
+    transition: 0.3s;
+}
+
+.foto-zendaya:hover {
+    transform: scale(1.03);
+}
+
+/* PELÍCULAS Y SERIES */
+
 .pelicula {
-width: 700px;
-margin: 13px auto;
-padding: 20px;
-background-color: #d695a3;
-border: 3px solid #6b5149;
-border-radius: 12px;
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: var(--rosa-fuerte);
+    border: 3px solid #6b5149;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
 }
 
 .pelicula img {
-width: 100%;
-height: 300px;
-border-radius: 12px;
-object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* TABLAS */
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: var(--rosa);
+    color: var(--texto);
+    font-weight: bold;
+    padding: 14px;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--borde);
+}
+
+tbody tr:hover {
+    background-color: var(--rosa);
 }
 
 
-/* PARA CONTACTO*/
-
+/* FORMULARIO DE CONTACTO */
 
 .contacto {
-background-color: #fffaf7;
-width: 90%;
-max-width: 700px;
-margin: 40px auto;
-padding: 30px;
-border: 2px solid #d8b8ae;
-border-radius: 15px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--blanco);
+    border: 2px solid var(--borde);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
 }
 
 .contacto label {
-display: block;
-margin-top: 15px;
+    display: block;
+    margin-top: 15px;
 }
 
 .contacto input[type="text"],
 .contacto input[type="email"],
 .contacto textarea {
-width: 100%;
-padding: 8px;
-margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    font-family: inherit;
 }
+
+.contacto textarea {
+    resize: vertical;
+}
+
+
+/* BOTÓN DEL FORMULARIO */
 
 .contacto input[type="submit"] {
-margin-top: 15px;
-padding: 8px 25px;
-background-color: #d695a3;
-border: 2px solid #6b5149;
-border-radius: 8px;
+    width: auto;
+    background-color: var(--rosa-fuerte);
+    color: var(--texto);
+    border: 1px solid #6b5149;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto input[type="submit"]:hover {
+    background-color: var(--rosa);
+    transform: translateY(-2px);
 }
 
 
+/* VIDEOS */
 
-
-/* CONTENIDO */
-
-main {
-width: 90%;
-max-width: 1100px;
-margin: 40px auto;
-
-
-}
-
-/* IMÁGENES */
-
-img {
-max-width: 100%;
-
-}
-
-/*FOTOS PRINCIPALES*/
-.foto-zendaya{
-width: 500px;
-border-radius: 15px;
-display: block;
-margin: 25px auto;
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 
-/* FOOTER */
+/* PIE DE PÁGINA */
 
 footer {
-background-color: #ead8d0;
-color: #5a4038;
-text-align: center;
-padding: 30px;
-margin-top: 50px;
+    background-color: var(--rosa);
+    color: var(--texto-menu);
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
 
+footer a {
+    color: var(--texto-menu);
+}
+
+footer a:hover {
+    color: var(--rosa-fuerte);
+}
+
+/* TEXTO */
+
+p {
+    line-height: 1.6;
+}
+
+
+/* EFECTO PARA ARTÍCULOS */
+
+article {
+    background-color: var(--blanco);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
