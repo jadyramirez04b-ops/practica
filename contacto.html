@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio y Contactos.</title>
+
+    <title>Contacto</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
@@ -30,33 +31,108 @@
 
     </header>
 
+
     <main>
 
         <h2>Formulario de contacto</h2>
+
+
+        <section>
+
+            <h2>Más allá de la actuación</h2>
+
+            <p>
+                Zendaya ha construido una carrera que va mucho más allá de la actuación.
+                Desde sus primeros trabajos en televisión ha ido desarrollando diferentes
+                facetas dentro de la industria del entretenimiento, demostrando que puede
+                participar en proyectos muy distintos.
+            </p>
+
+            <p>
+                Además de actuar, Zendaya también ha trabajado como productora en algunos
+                de sus proyectos. Esta experiencia le ha permitido participar en otros
+                aspectos de las producciones y tener una mayor participación en el
+                desarrollo de algunos de sus trabajos.
+            </p>
+
+            <p>
+                Otra de las áreas en las que ha logrado destacar es la moda. A lo largo
+                de su carrera ha participado en campañas, eventos y colaboraciones con
+                reconocidas marcas de moda. Su estilo y la manera en que presenta sus
+                diferentes looks la han convertido en una figura muy reconocida dentro
+                de este ámbito.
+            </p>
+
+            <p>
+                También ha desarrollado una trayectoria musical, especialmente durante
+                sus primeros años en la industria. Su participación en proyectos de
+                televisión y música le permitió mostrar otras habilidades además de la
+                actuación.
+            </p>
+
+            <p>
+                Todas estas experiencias han contribuido a que Zendaya tenga una carrera
+                diversa y pueda participar en diferentes áreas del entretenimiento.
+                Por eso, en este formulario puedes compartir qué aspecto de su carrera
+                te parece más interesante y dar tu opinión sobre su trabajo.
+            </p>
+
+            <img  src="img/zendaya12.png" alt="Zendaya">
+            
+
+
+        </section>
+
+        <p>
+            Comparte tu opinión sobre Zendaya y cuéntanos qué piensas sobre su trabajo.
+        </p>
 
         <section class="contacto">
 
             <form>
 
                 <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
 
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" placeholder="Escribe tu correo">
+                <input type="email" id="correo" name="correo" placeholder="Escribe tu correo">
+
 
                 <label>¿En qué película o serie conociste a Zendaya?</label>
 
-                <input type="radio" name="pelicula" id="spiderman">
+                <input type="radio" name="pelicula" id="spiderman" value="Spider-Man">
                 <label for="spiderman">Spider-Man</label>
 
-                <input type="radio" name="pelicula" id="euphoria">
+                <input type="radio" name="pelicula" id="euphoria" value="Euphoria">
                 <label for="euphoria">Euphoria</label>
 
-                <input type="radio" name="pelicula" id="dune">
+                <input type="radio" name="pelicula" id="dune" value="Dune">
                 <label for="dune">Dune</label>
 
+                <input type="radio" name="pelicula" id="otra" value="Otra">
+                <label for="otra">Otra</label>
+
+
+                <label>¿Cómo calificas el trabajo de Zendaya?</label>
+
+                <input type="radio" name="calificacion" id="excelente" value="Excelente">
+                <label for="excelente">Excelente</label>
+
+                <input type="radio" name="calificacion" id="bueno" value="Bueno">
+                <label for="bueno">Bueno</label>
+
+                <input type="radio" name="calificacion" id="regular" value="Regular">
+                <label for="regular">Regular</label>
+
+
                 <label for="comentario">Déjanos un comentario</label>
-                <textarea id="comentario" rows="5" placeholder="Escribe aquí..."></textarea>
+
+                <textarea id="comentario"
+                          name="comentario"
+                          rows="5"
+                          placeholder="Escribe aquí..."></textarea>
+
 
                 <input type="submit" value="Enviar">
 
@@ -65,7 +141,10 @@
         </section>
 
     </main>
+
+
     <footer>
+
         <h2>Redes sociales</h2>
 
         <p>Instagram: @zendaya</p>
@@ -74,5 +153,6 @@
 
     </footer>
 
+</body>
 
-    <body>
+</html>
