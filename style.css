@@ -29,6 +29,7 @@ main {
     width: 90%;
     max-width: 1100px;
     margin: 40px auto;
+    text-align: center
 }
 
 
@@ -195,6 +196,8 @@ tbody tr:hover {
 }
 
 
+
+
 /* FORMULARIO DE CONTACTO */
 
 .contacto {
@@ -258,6 +261,14 @@ video {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+blockquote {
+    font-style: italic;
+    background-color: #ead8d0;
+    border-left: 5px solid #d695a3;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0 8px 8px 0;
+}
 
 /* PIE DE PÁGINA */
 
@@ -268,6 +279,8 @@ footer {
     padding: 30px;
     margin-top: 50px;
 }
+
+
 
 footer a {
     color: var(--texto-menu);
